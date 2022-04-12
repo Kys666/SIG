@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas SIG</title>
+    <style>
+        body {background-color: rgb(94, 194, 237);}
+        h1 {color: black; font-size: 24; text-align:center;}
+        p {color: black;font-size: 12;text-align: center;}
+      </style>
+<script type="text/javascript"
+ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6hGwAHNIGCvuBIT2cpUEpuZd_7AZ6lKo&callback=initMap&libraries=places,geometry&solution_channel=GMP_QB_locatorplus_v4_cA">
+</script>
+<script type="text/javascript">
+   function initialize() {
+        var mapOptions = {
+          center:{
+              lat:-0.06065,lng:109.344885},
+              fullscreenControl:true,
+              mapTypeControl:false,
+              streetViewControl:false,
+              zoom:18,
+              zoomControl:true,
+            };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+<body>
+    <h1>Lokasi Universitas Tanjungpura</h1>  
+    <p>Anggota Kelompok : </p>
+    <p>Siauling [H1101191009]</p>
+    <p>Angeline Christia [H1101191015]</p>
+    <p>Vidita Reka [H1101191044]</p>
+    <div class="center" id="map-canvas" style="width:1000px;height:500px" />
+  
+</body>
+</html>
